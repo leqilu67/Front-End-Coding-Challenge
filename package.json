@@ -1,0 +1,11 @@
+{
+  "name": "front-end coding challenge",
+  "description": "coding challenge",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
