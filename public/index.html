@@ -23,11 +23,11 @@
 
     <div class="row">
       <div class="column left">
-        <button><a href="#">Menu 1</a></button>
-        <button><a href="#">Menu 2</a></button>
-        <button><a href="#">Menu 3</a></button>
-        <button><a href="#">Menu 4</a></button>
-        <button><a href="#">Menu 5</a></button>
+        <button onclick="btnClicked(event);" value="1"><a href="#">Menu 1</a></button>
+        <button onclick="btnClicked(event);" value="2"><a href="#">Menu 2</a></button>
+        <button onclick="btnClicked(event);" value="3"><a href="#">Menu 3</a></button>
+        <button onclick="btnClicked(event);" value="4"><a href="#">Menu 4</a></button>
+        <button onclick="btnClicked(event);" value="5"><a href="#">Menu 5</a></button>
       </div>
 
       <div class="column middle">
@@ -69,5 +69,21 @@
   <footer>
     Copyright &copy; 2014 All Rights Reserved
   </footer>
+  <script>
+    function btnClicked(e){
+      var buttons;
+      buttons = document.getElementsByTagName('button');
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].innerHTML = '<a href="#">Menu ' + (i + 1) + '</a>';
+        buttons[i].style.backgroundColor = '#a9a9a9';
+      }
+
+      var target = e.currentTarget;
+
+      target.style.backgroundColor = '#d4d4d4';
+      target.style.color = '#888888';
+      target.innerHTML = 'Menu ' + target.value + ' (current)';
+    }
+  </script>
 </body>
 </html>
