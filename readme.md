@@ -12,4 +12,4 @@ NodeJS, Express
 
 ## Author
 
-* **Leqi Lu** - (https://github.com/pototoland)
+* **Leqi Lu** - (https://github.com/leqilu67)
